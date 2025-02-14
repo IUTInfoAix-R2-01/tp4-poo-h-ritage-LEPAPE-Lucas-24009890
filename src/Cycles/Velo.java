@@ -82,6 +82,7 @@ public class Velo {
         System.out.println(v1);
 
         System.out.println("Test de getPuissance:");
-        System.out.printf("Puissance v3 (avec 90 tours/min) : %.2f\n", v3.getPuissance(90));
-    }
+        System.out.printf("Puissance v3 : %.2f\n", v3.getPuissance(90));
+        System.out.printf("Puissance v1 : %.2f\n", v1.getPuissance(90));
+	}
 }
