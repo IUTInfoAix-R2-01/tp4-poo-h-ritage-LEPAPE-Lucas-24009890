@@ -1,0 +1,28 @@
+5.) Que signifie "redéfinir une méthode" ?
+
+Redéfinir une méthode signifie remplacer une méthode héritée d'une classe 
+par une nouvelle version dans une class file afin d'adapter son fonctionnement.
+
+6.) Quelles méthodes de Velo et VeloElec sont redéfinies ?
+
+Les méthodes redéfinie dans VeloElec sont :
+	- toString()
+	- getPuissance()
+	
+7.) Que signifie l'annotation @Override, placé parfois avant la définition d'une méthode ?
+
+L'annotation @Override permet d'indiquer qu'une méthode est redéfinit depuis une methode hérité d'une class mère.
+Ce qui securise le code, évite les erreurs et améliore la lissibilité.
+
+8.) De manière générale, lorsque l’annotation @Override est pertinente dans le code, qu’apporte sa pré-
+sence ? Dans ce cas, peut-on s’en dispenser ? Tester.
+
+L'annotation @Override levera une exception si la méthode redéfinis est mal écrit. 
+Cela permet d'éviter de faire des fautes de frappes lors de la définition 
+de la fonction.
+
+10.) Que signifie l'appel super.getPuissance(FrequenceCoupsDePedale) dans la méthode VeloElec.getPuissance() ?
+
+L'appel super.getPuissance(FrequenceCoupsDePedale) dans la méthode VeloElec.getPuissance()
+signifie que l'on appelle getPuissance() de la class velo.
+
