@@ -36,10 +36,12 @@ public class VeloElec extends Velo{
 		 this.facteurPuissanceMoteur = NEW;
 	 }
 	 
+	 @Override
 	 public String toString() {
 		 return String.format("Vélo Électrique [Braquet: %.2f, DiamRoue: %.2f, PuissanceMoteur: %.2f]", getBraquet(), getDiamRoue(), facteurPuissanceMoteur);
 	 }
 	 
+	 @Override
 	 public double getPuissance(double FrequenceCoupsDePedale) {
 		 return super.getPuissance(FrequenceCoupsDePedale) * facteurPuissanceMoteur;
 	 }
